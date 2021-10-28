@@ -1,3 +1,3 @@
-# My Game is Cool!
+# Basic JavaScript
 
-Make sure you give it a good description here...
+This is where I will keep track of ther basic stuff I learn.
