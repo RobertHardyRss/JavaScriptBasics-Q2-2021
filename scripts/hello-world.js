@@ -8,4 +8,11 @@ it can span many lines
 
 */
 
-console.log("Hello world!");
+let firstName = "Robert";
+let age = 50;
+
+console.log(
+	"Hello world! My name is %s and I am %d years old.",
+	firstName,
+	age
+);
