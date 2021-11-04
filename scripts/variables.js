@@ -33,8 +33,8 @@ console.log(foo, bar);
 	// variables declared with "let" without a problem
 	// and they will only be visible in this new scope
 	let bar = 20;
-	
-    // inside this new scope, I can redeclare variables
+
+	// inside this new scope, I can redeclare variables
 	// declared with "var", but it will overwrite the value I set
 	// in the outer scope.  This is the problem with var, it does not
 	// honor "scope boundaries"
@@ -55,4 +55,56 @@ console.log(foo, bar);
 // I can again redeclare foo because var is crazy
 var foo = 200;
 // but this line will throw an error because "let" is better and protects us!
-let bar = 50;
+//let bar = 50;
+
+// Arrays are a list like construct.  They are variables that
+// can hold multiple different values that can be accessed
+// by an index.
+// names is an array of string values
+let names = ["Austin", "Andrew", "Priya"];
+
+// we can access a specific name in our list of names by
+// specifying an index.  Array indexes start at zero,
+// so this will outout the second value in our index
+// which is "Andrew"
+console.log(names[1]);
+// Andrew will output to the console
+
+// ages is an array of numbers
+let ages = [16, 15, 15];
+console.log("%s is %d years old", names[1], ages[1]);
+
+// objects are a type of variable that can encapsulate
+// data, called "properties", and functionality, called "methods"
+// game is an object that has two properties, score and isOver,
+// and one method, displayScore()
+let game = {
+	score: 0,
+	isOver: false,
+	displayScore: function () {
+		return "Current Score is " + this.score;
+	},
+};
+
+// log out the object
+console.log(game);
+// log out the output from our displayScore method
+console.log(game.displayScore());
+
+// update the isOver property of our game object and set it to true
+game.isOver = true;
+// log out the object
+console.log(game);
+
+// functions are also a type of variable.  Functions
+// allow us to define a set of instructions and give it a
+// name.  We can define what parameters are passed to our
+// function and do things with the parameters inside the
+// body of our funtion.
+let add = function (num1, num2) {
+	return num1 + num2;
+};
+
+// take the output of our add function and assign it to the variable called sum
+let sum = add(3, 10);
+console.log(sum);
