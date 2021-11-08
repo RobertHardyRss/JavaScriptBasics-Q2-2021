@@ -5,8 +5,8 @@
 }
 
 body {
-	background-color: darkgreen;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 #game-canvas {
